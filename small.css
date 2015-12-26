@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*  aiueo
+--------------------------------------------*/
+
+.aiueo {
+  color: #646765;/** comment */
+  /** comment */font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: url(/abbbbbb.gif) no-repeat 0 50%;
+  padding-left:18px;
+  /*float:left;
+  width:300px;*/
+  clear:both !important;
+}
+
+/*==================================================================
+  1: hogehoge
+===================================================================*/
+
+/*
+#pageAccount h2, #pageSales #menuContents h2 {
+  padding:0px 5px 5px 0px;
+  margin-right:3px;
+  font-weight:bold;
+  text-align:center;
+  z-index:10000px;
+}
+*/
+
+.hoge,
+.ika,
+.preBg{
+  background: url(/aaaaaa/body_bg.gif) !important;
+}
+
+.preTable {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.preTable th {
+  background: #EEE8E1;
+  padding: 12px;
+  border-bottom: solid 2px #F8F7F4;
+  font-weight:normal;
+  font-size:12px;
+}
+
+.preTable td, .preTable2 td{
+  padding: 12px;
+  border-bottom: solid 2px #F8F7F4;
+  background: white;
+}
