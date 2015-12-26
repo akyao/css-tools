@@ -1,6 +1,8 @@
 # what is this?
 
 make tsv file from csv.
+like this.
+![sample image](/sample_tsv.png)
 
 # setting & usage
 
