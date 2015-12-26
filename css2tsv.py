@@ -9,7 +9,7 @@ import sys
 # selectorの一覧
 # grep "{" style.css | sed -e s/\{// > ~/fuck.txt
 # propertyの一覧
-# grep ":" static/common/css/media.css | grep -v "{" | sed -e s/:.*//g | tr -d " " | sort | uniq
+# grep ":" style.css | grep -v "{" | sed -e s/:.*//g | tr -d " " | sort | uniq
 
 # 起動方法
 # cat media.css | cssfmt | python css2tsv.py > fuck.tsv
