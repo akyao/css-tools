@@ -14,6 +14,9 @@ import sys
 # 起動方法
 # cat media.css | cssfmt | python css2tsv.py > fuck.tsv
 
+# TODO ベンダープレフィックス
+# TODO プロパティ 出力順序
+
 
 class CssBlock(object):
 
@@ -34,7 +37,7 @@ class CssBlock(object):
             CssBlock.all_property.append(key)
 
 
-class ResultPrint(object):
+class ResultPrinter(object):
 
     def __init__(self):
         self.result_txt = ""
@@ -73,6 +76,7 @@ if __name__ == "__main__":
     # }でsplit
     blocks = line.split("}")
 
+    # 扱いやすいList[CssBlock]形式に変換する
     all_blocks = []
     for block in blocks:
         splited = block.split("{")
@@ -88,11 +92,8 @@ if __name__ == "__main__":
                     cssBlock.add_property(prop_key, prop_val)
             all_blocks.append(cssBlock)
 
-    # TODO 準備
 
-    # TODO CSV書き込み
-
-    printer = ResultPrint()
+    printer = ResultPrinter()
 
     # titleの書き出し
     printer.add_cell("")
@@ -100,7 +101,7 @@ if __name__ == "__main__":
         printer.add_cell(header)
     printer.add_line()
 
-    # 各要素の描き込み
+    # 各要素の書き出し
     for css_block in all_blocks:
         printer.add_cell(css_block.selector)
         for prop_key in CssBlock.all_property:
