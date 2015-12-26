@@ -12,7 +12,7 @@ import sys
 # grep ":" static/common/css/media.css | grep -v "{" | sed -e s/:.*//g | tr -d " " | sort | uniq
 
 # 起動方法
-# cat media.css | cssfmt | python css_table.py
+# cat media.css | cssfmt | python css2csv.py
 
 
 if __name__ == "__main__":
