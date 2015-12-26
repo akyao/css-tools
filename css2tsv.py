@@ -12,7 +12,7 @@ import sys
 # grep ":" static/common/css/media.css | grep -v "{" | sed -e s/:.*//g | tr -d " " | sort | uniq
 
 # 起動方法
-# cat media.css | cssfmt | python css2csv.py > fuck.tsv
+# cat media.css | cssfmt | python css2tsv.py > fuck.tsv
 
 
 class CssBlock(object):
