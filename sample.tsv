@@ -1,0 +1,7 @@
+	color	font-size	font-weight	margin-bottom	background	padding-left	clear	width	padding	border-bottom	
+.aiueo 	 #646765	 14px	 bold	 10px	 url(/abbbbbb.gif) no-repeat 0 50%	 18px	 both !important				
+.hoge,.ika,.preBg 					 url(/aaaaaa/body_bg.gif) !important						
+.preTable 				 18px				 100%			
+.preTable th 		 12px	 normal		 #EEE8E1				 12px	 solid 2px #F8F7F4	
+.preTable td,.preTable2 td 					 white				 12px	 solid 2px #F8F7F4	
+
